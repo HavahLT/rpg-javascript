@@ -1,0 +1,91 @@
+body{background:teal;}
+
+#fenetre, #info, #battle, #menu{
+  width:100%;
+}
+
+#info{
+  text-align: center;
+  padding:40px 0;
+  color:#FFFFFF;
+
+}
+
+#info button{
+  background: orange;
+  border:none;
+  padding:10px;
+  margin:10px;
+  cursor: pointer;
+}
+
+#info, #menu{
+  border:3px solid #FFFFFF;
+}
+
+#info-bulle-player{
+  position: absolute;
+  width:150px;
+  height:150px;
+  background:#FFFFFF;
+  padding:20px;
+  left:60px;
+  bottom:70px;
+  z-index: 10;
+}
+#info-bulle-enemy{
+  position: absolute;
+  width:150px;
+  height:150px;
+  background:#FFFFFF;
+  padding:20px;
+  right:60px;
+  bottom:70px;
+  z-index: 10;
+}
+
+#battle{
+  padding:150px 0;
+}
+
+.joueur-ennemi, .col-vies{
+  display: flex;
+  justify-content: space-around;
+}
+#player{
+  background-image: url("../img/player.png");
+  width:28px;
+  height:54px;
+  background-position: -402px -204px;
+}
+
+#enemy{
+  -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+}
+
+#menu{
+  position: sticky;
+  top:1px;
+}
+
+.col1, .col2{
+  display: flex;
+  justify-content: center;
+}
+
+.col1 button, .col2 button{
+  background: orange;
+  border:none;
+  width:100px;
+  color:#000000;
+  padding:10px;
+  margin:10px;
+  cursor: pointer;
+}
+
+.col1 button:hover, .col2 button:hover{
+  background:#A34E06;
+}
