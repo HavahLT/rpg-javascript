@@ -50,3 +50,9 @@ btnMagieGlace.addEventListener("click", function(){
       afficheLesViesDeLennemi.textContent = "PV : " + enemy1.vies;
       containerViesEnnemi.appendChild(afficheLesViesDeLennemi);
     }
+
+// conditions pour la mécanique du jeu :
+
+if(enemy.vies === 0){
+  imgEnemy.style.display = "none";
+}
